@@ -26,11 +26,11 @@ npm start
 
 ## Routes (Endpoints)
 
-# Books
+### Books
 ```
-- Get All Books -> `/api/books`
+- Get All Books: `/api/books`
 
-- Get Specific Books -> `/api/books?minPrice=10&maxPrice=12`
+- Get Specific Books: `/api/books?minPrice=10&maxPrice=12`
 
 ```
 
