@@ -28,6 +28,7 @@ npm start
 
 ### Books
 ```
+- `HTML`:
 - Get All Books: `/api/books`
 
 - Get Specific Books: `/api/books?minPrice=10&maxPrice=12`
