@@ -25,13 +25,19 @@ npm start
 ```
 
 ## Routes (Endpoints)
+### Books
 - Get All Books: `/api/books`
-
 - Get Specific Books: `/api/books?minPrice=10&maxPrice=12`
+- Get Book By Id: `/api/books:id`
 
+- Create Book (POST): `/api/books`
 
-# Authors
+- Update Book By Id (PUT): `/api/books:id`
+  
+- Delete Book By Id (DELETE): `/api/books:id`
 
-# Users
+### Authors
 
-# Authentication
+### Users
+
+### Authentication
