@@ -1,8 +1,9 @@
 ## book_store_api
+
 Book Store API - project with Express JS framework.
 
-
 ## Environment Variables
+
 Create `.env` file in the root of your project and add the following
 
 ```
@@ -15,27 +16,30 @@ USER_PASS= your email service password
 ```
 
 ## Install Dependencies
+
 ```
 npm install
 ```
 
 ## Run
+
 ```
 npm start
 ```
 
 ## Routes (Endpoints)
-```
+
 # Books
 
-Get All Books -> [/api/books](https://book-store-api-sm0w.onrender.com/api/books) OR 
-Get All Books -> [/api/books?minPrice=10&maxPrice=12](https://book-store-api-sm0w.onrender.com/api/books?minPrice=10&maxPrice=12)
+```
+- Get All Books -> `/api/books`
 
+- Get Specific Books -> `/api/books?minPrice=10&maxPrice=12`
+
+```
 
 # Authors
 
 # Users
 
 # Authentication
-
-```
