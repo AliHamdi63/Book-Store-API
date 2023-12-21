@@ -28,8 +28,8 @@ npm start
 ```
 # Books
 
-Get All Books --> [/api/books](https://book-store-api-sm0w.onrender.com/api/books) OR 
-Get All Books --> [/api/books?minPrice=10&maxPrice=12](https://book-store-api-sm0w.onrender.com/api/books?minPrice=10&maxPrice=12)
+Get All Books -> [/api/books](https://book-store-api-sm0w.onrender.com/api/books) OR 
+Get All Books -> [/api/books?minPrice=10&maxPrice=12](https://book-store-api-sm0w.onrender.com/api/books?minPrice=10&maxPrice=12)
 
 
 # Authors
