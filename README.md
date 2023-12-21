@@ -23,3 +23,24 @@ npm install
 ```
 npm start
 ```
+
+## Routes (Endpoints)
+```
+# Books
+```
+Get All Books --> /api/books OR 
+Get All Books --> /api/books?minPrice=10&maxPrice=12 
+```
+# Authors
+```
+
+```
+# Users
+```
+
+```
+# Authentication
+```
+
+```
+```
