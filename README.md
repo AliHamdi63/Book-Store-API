@@ -30,17 +30,12 @@ npm start
 
 Get All Books --> /api/books OR 
 Get All Books --> /api/books?minPrice=10&maxPrice=12 
-```
+
 
 # Authors
-```
 
-```
 # Users
-```
 
-```
 # Authentication
-```
 
 ```
