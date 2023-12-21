@@ -1,0 +1,647 @@
+{
+	"info": {
+		"_postman_id": "8870fec1-d59e-4e0e-a160-c7b7d5079fdf",
+		"name": "Book Store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21641726"
+	},
+	"item": [
+		{
+			"name": "Books",
+			"item": [
+				{
+					"name": "Get All Books",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/books?minPrice=10&maxPrice=12",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"books"
+							],
+							"query": [
+								{
+									"key": "minPrice",
+									"value": "10"
+								},
+								{
+									"key": "maxPrice",
+									"value": "12"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Book By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/books/657719a83b17ef095fe82f80",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"books",
+								"657719a83b17ef095fe82f80"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create Book ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE2NzY0OSwiZXhwIjoxNzAzMTc0ODQ5fQ.6flfvizw6LFet9x0QrJiSDlmVR7J328xwcWqs6qo9BY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"sffdfSwan\",\r\n    \"author\": \"6554db927b7580071d60f789\",\r\n    \"description\": \"About Red Swan\",\r\n    \"price\": 14,\r\n    \"cover\": \"soft cover\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/books/",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"books",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Book By Id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE2NzY0OSwiZXhwIjoxNzAzMTc0ODQ5fQ.6flfvizw6LFet9x0QrJiSDlmVR7J328xwcWqs6qo9BY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Swan\",\r\n    \"description\": \"About Swan\",\r\n    \"price\": 19\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/books/658446bf50d864b0c863027b",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"books",
+								"658446bf50d864b0c863027b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Book By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE2NzY0OSwiZXhwIjoxNzAzMTc0ODQ5fQ.6flfvizw6LFet9x0QrJiSDlmVR7J328xwcWqs6qo9BY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Red Swan\",\r\n    \"author\": \"Tobias Hillerman\",\r\n    \"description\": \"About Red Swan\",\r\n    \"price\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/books/658446bf50d864b0c863027b",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"books",
+								"658446bf50d864b0c863027b"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authors",
+			"item": [
+				{
+					"name": "Get All Authors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/authors",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Authors By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/authors/65771979194fc750c9573d5e",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"authors",
+								"65771979194fc750c9573d5e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Author",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE3MDk1MSwiZXhwIjoxNzAzMTc4MTUxfQ.MO4GaYHrKVxOEnQl75JhEDLknQwi8WF2G4xupllkeMU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"John\",\r\n    \"lastName\": \"Bea\",\r\n    \"nationality\": \"British\",\r\n    \"image\": \"default-image.png\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/authors",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Author By Id",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE3MDk1MSwiZXhwIjoxNzAzMTc4MTUxfQ.MO4GaYHrKVxOEnQl75JhEDLknQwi8WF2G4xupllkeMU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Ali\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/authors/6584539aa3a2f2dd89284a64",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"authors",
+								"6584539aa3a2f2dd89284a64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Author By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE3MDk1MSwiZXhwIjoxNzAzMTc4MTUxfQ.MO4GaYHrKVxOEnQl75JhEDLknQwi8WF2G4xupllkeMU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"John\"\r\n   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/authors/6584539aa3a2f2dd89284a64",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"authors",
+								"6584539aa3a2f2dd89284a64"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWNiYmNhMmRkMzkwNDIwOWY4NmJiOCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MDA1NzYyMDIsImV4cCI6MTcwMDU4MzQwMn0.EYGNHiThBdNVD1bX13AemBTxhMEkKZ5fK4e7rpxjuPI",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eslam@ahmed.com\",\r\n    \"password\": \"eslam1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/users/655cbbca2dd3904209f86bb8",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"655cbbca2dd3904209f86bb8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE3MTE0NywiZXhwIjoxNzAzMTc4MzQ3fQ.KUHFi6UVCBnP5AnQaZxTVbiBiQ47ura9e9qTkEHb90Y",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWNiYmNhMmRkMzkwNDIwOWY4NmJiOCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MDA1Nzg5MTEsImV4cCI6MTcwMDU4NjExMX0.anbbb24Xzi1yK7eXRsSM9KTTF-IaWMw-l8kHuk9PUV4",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eslam@ahmed.com\",\r\n    \"password\": \"eslam1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/users",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ODQ0NjNiNTBkODY0YjBjODYzMDI3NCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMzE3MTE0NywiZXhwIjoxNzAzMTc4MzQ3fQ.KUHFi6UVCBnP5AnQaZxTVbiBiQ47ura9e9qTkEHb90Y",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWNiYmNhMmRkMzkwNDIwOWY4NmJiOCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MDA1Nzg5MTEsImV4cCI6MTcwMDU4NjExMX0.anbbb24Xzi1yK7eXRsSM9KTTF-IaWMw-l8kHuk9PUV4",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eslam@ahmed.com\",\r\n    \"password\": \"eslam1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/users/6584463b50d864b0c8630274",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"6584463b50d864b0c8630274"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NTYzNWJiYmRlYmZiMzYxZTczMjkwMCIsImlzQWRtaW4iOnRydWUsImlhdCI6MTcwMDU3NTQxMiwiZXhwIjoxNzAwNTgyNjEyfQ.ZtcnLF1Y2uGvXC9E4J5GjanDa7WiyJsRMMpIMNbtMWA",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1NWNiYmNhMmRkMzkwNDIwOWY4NmJiOCIsImlzQWRtaW4iOmZhbHNlLCJpYXQiOjE3MDA1Nzg5MTEsImV4cCI6MTcwMDU4NjExMX0.anbbb24Xzi1yK7eXRsSM9KTTF-IaWMw-l8kHuk9PUV4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"eslam@ahmed.com\",\r\n    \"password\": \"eslam1245\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/users/655cbbca2dd3904209f86bb8",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"655cbbca2dd3904209f86bb8"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register New User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"ali_Hamdi\",\r\n    \"email\": \"alihamdy217@outlook.com\",\r\n    \"password\": \"ali9921\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/auth/register",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"alihamdy217@outlook.com\",\r\n    \"password\": \"ali9921\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://book-store-api-sm0w.onrender.com/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"book-store-api-sm0w",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Upload image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "https://book-store-api-sm0w.onrender.com/api/upload",
+					"protocol": "https",
+					"host": [
+						"book-store-api-sm0w",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"api",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
